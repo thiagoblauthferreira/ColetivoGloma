@@ -6,4 +6,4 @@ O projeto tem início nas necessidades do voluntariado durante as catástrofes d
 
 Descrição do projeto aqui https://github.com/thiagoblauthferreira/ColetivoGloma/issues/1#issuecomment-2113679378
 
-Agradecimento a **Casa do Desenvolvedor** https://casadodesenvolvedor.com.br/ que divulgou a proposta para sua base de usuário, ajudando na captação de desenvolvedores voluntários.
+Agradecimento especial a **Casa do Desenvolvedor** https://casadodesenvolvedor.com.br/ que divulgou a proposta para sua base de usuários, ajudando na captação de desenvolvedores voluntários.
