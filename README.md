@@ -8,5 +8,8 @@ Descrição do projeto aqui https://github.com/thiagoblauthferreira/ColetivoGlom
 
 Meu WhatsApp para contato https://api.whatsapp.com/send/?phone=5551999871258
 
+E-mail coletivogloma@gmail.com
+
 Agradecimento especial a **Casa do Desenvolvedor** https://casadodesenvolvedor.com.br/ que divulgou a proposta para sua base de usuários, ajudando na captação de desenvolvedores voluntários.
+
 
