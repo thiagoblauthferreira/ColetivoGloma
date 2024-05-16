@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualização de dados da conta</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Atualização de dados da conta</h1>
+        <form id="formulariousuario">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div class="input-group">
+                    <label for="nomecompleto">Nome Completo:</label>
+                    <input type="text" id="nomecompleto" name="nomecompleto" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="confirmarEmail" name="confirmarEmail" placeholder="Confirmar E-mail" required>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha" required>
+                </div>
+                <div class="input-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                    <input type="tel" id="confirmarTelefone" name="confirmarTelefone" placeholder="Confirmar Telefone" required>
+                </div>
+                <div class="input-group">
+                    <label for="datadenascimento">Data de Nascimento:</label>
+                    <input type="date" id="datadenascimento" name="datadenascimento" required>
+                </div>
+                <div class="input-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereço" placeholder="Rua" required>
+                    <input type="text" id="numero" name="numero" placeholder="Número" required>
+                    <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+                    <input type="text" id="estado" name="estado" placeholder="Estado" required>
+                    <input type="text" id="cependereco" name="cependereco" placeholder="CEP" required>
+                </div>
+            </fieldset>
+
+            <button type="submit">Atualizar dados</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locais com demandas</title>
+    <link rel="stylesheet" href="stylesbusca.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scriptbusca.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Locais com demandas</h1>
+            <form>
+                <div class="input-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" onchange="popularCidades()" required>
+                        <option value="">Selecione o estado</option>
+                        <!-- Aqui estão os estados brasileiros -->
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <!-- Inclua os outros estados aqui -->
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="cidade">Cidade:</label>
+                    <select id="cidade" name="cidade" onchange="popularBairros()" required>
+                        <option value="">Selecione a cidade</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="tipoAbrigo">Tipo de Abrigo:</label>
+                    <select id="tipoAbrigo" name="tipoAbrigo">
+                        <option value="pessoas">Pessoas</option>
+                        <option value="animais">Animais</option>
+                        <option value="ambos">Ambos</option>
+                    </select>
+                </div>
+
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

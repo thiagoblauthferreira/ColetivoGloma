@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Demandas do Ponto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de demandas do ponto</h1>
+        <form id="demandsForm">
+            <fieldset>
+                <legend>Alimentos</legend>
+                <div class="input-group">
+                    <input type="checkbox" id="sanduiche" name="sanduiche">
+                    <label for="sanduiche">Sanduíche</label>
+                    <input type="number" id="quantidadeSanduiche" name="quantidadeSanduiche" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="marmita" name="marmita">
+                    <label for="marmita">Marmita</label>
+                    <input type="number" id="quantidadeMarmita" name="quantidadeMarmita" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="arroz" name="arroz">
+                    <label for="arroz">Arroz</label>
+                    <input type="number" id="quantidadeArroz" name="quantidadeArroz" placeholder="Quantidade em kilos">
+                </div>
+                    <div class="input-group">
+                    <input type="checkbox" id="feijao" name="feijao">
+                    <label for="feijao">Feijão</label>
+                    <input type="number" id="quantidadeFeijao" name="quantidadeFeijao" placeholder="Quantidade em kilos">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="massa" name="massa">
+                    <label for="massa">Massa</label>
+                    <input type="number" id="quantidadeMassa" name="quantidadeMassa" placeholder="Quantidade em kilos">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="farinhadetrigo" name="farinhadetrigo">
+                    <label for="farinhadetrigo">Farinha</label>
+                    <input type="number" id="quantidadeFarinhadetrigo" name="quantidadeFarinhadetrigo" placeholder="Quantidade em kilos">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="massadetomate" name="massadetomate">
+                    <label for="massadetomate">Massa/Molho de tomate</label>
+                    <input type="number" id="quantidadeMassadetomate" name="quantidadeMassadetomate" placeholder="Quantidade em kilos">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="oleo" name="oleo">
+                    <label for="oleo">Óleo</label>
+                    <input type="number" id="quantidadeOleo" name="quantidadeOleo" placeholder="Quantidade em litros">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="sal" name="sal">
+                    <label for="sal">Sal</label>
+                    <input type="number" id="quantidadeSal" name="quantidadeSal" placeholder="Quantidade em kilos">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="farinhademilho" name="farinhademilho">
+                    <label for="farinhademilho">Farinha de milho</label>
+                    <input type="number" id="quantidadeFarinhademilho" name="quantidadeFarinhademilho" placeholder="Quantidade em kilos">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="leite" name="leite">
+                    <label for="leite">leite</label>
+                    <input type="number" id="quantidadeLeite" name="quantidadeLeite" placeholder="Quantidade em litros">
+                </div> 
+                <div class="input-group">
+                    <input type="checkbox" id="acucar" name="acucar">
+                    <label for="açucar">Açucar</label>
+                    <input type="number" id="quantidadeAcucar" name="quantidadeAcucar" placeholder="Quantidade em kilos">
+                </div> 
+                <div class="input-group">
+                    <input type="checkbox" id="cafe" name="cafe">
+                    <label for="cafe">Café</label>
+                    <input type="number" id="quantidadeCafe" name="quantidadeCafe" placeholder="Quantidade em kilos">
+                </div> 
+                <!-- Adicione os outros itens da categoria Alimentos aqui -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Produtos para higiene</legend>
+                <div class="input-group">
+                    <input type="checkbox" id="papelhigienico" name="papelhigienico">
+                    <label for="papelhigienico">Papel Higiênico</label>
+                    <input type="number" id="quantidadePapelhigienico" name="quantidadePapelhigienico" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="saboneteembarra" name="saboneteembarra">
+                    <label for="saboneteembarra">Sabonete em barra</label>
+                    <input type="number" id="quantidadeSaboneteembarra" name="quantidadeSaboneteembarra" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="saboneteliquido" name="saboneteliquido">
+                    <label for="saboneteliquido">Sabonete liquido</label>
+                    <input type="number" id="quantidadeSaboneteliquido" name="quantidadeSaboneteliquido" placeholder="Quantidade">
+                </div>                
+                <div class="input-group">
+                    <input type="checkbox" id="absorvente" name="absorvente">
+                    <label for="absorvente">Absorvente</label>
+                    <input type="number" id="quantidadeAbsorvente" name="quantidadeAbsorvente" placeholder="Quantidade">
+                </div>
+                
+                <div class="input-group">
+                    <input type="checkbox" id="escovadedentes" name="escovadedentes">
+                    <label for="escovadedentes">Escova de dentes</label>
+                    <input type="number" id="quantidadeEscovadedentes" name="quantidadeEscovadedentes" placeholder="Quantidade">
+                </div>
+                
+                <div class="input-group">
+                    <input type="checkbox" id="pastadedentes" name="pastadedentes">
+                    <label for="pastadedentes">Pasta de dentes</label>
+                    <input type="number" id="quantidadePastadedentes" name="quantidadePastadedentes" placeholder="Quantidade">
+                </div>
+                
+                <div class="input-group">
+                    <input type="checkbox" id="desodorante" name="desodorante">
+                    <label for="desodorante">Desodorante</label>
+                    <input type="number" id="quantidadeDesodorante" name="quantidadeDesodorante" placeholder="Quantidade">
+                </div>
+                
+                <div class="input-group">
+                    <input type="checkbox" id="shampoo" name="shampoo">
+                    <label for="shampoo">Shampoo</label>
+                    <input type="number" id="quantidadeShampoo" name="quantidadeShampoo" placeholder="Quantidade">
+                </div>
+                
+                <div class="input-group">
+                    <input type="checkbox" id="condicionador" name="condicionador">
+                    <label for="condicionador">Condicionador</label>
+                    <input type="number" id="quantidadeCondicionador" name="quantidadeCondicionador" placeholder="Quantidade">
+                </div>
+                
+                <div class="input-group">
+                    <input type="checkbox" id="fraldaparabebe" name="fraldaparabebe">
+                    <label for="fraldaparabebe">Fralda para bebê</label>
+                    <input type="number" id="quantidadeFraldaparabebe" name="quantidadeFraldaparabebe" placeholder="Quantidade">
+                </div>
+                
+                <div class="input-group">
+                    <input type="checkbox" id="fraldageriatrica" name="fraldageriatrica">
+                    <label for="fraldageriatrica">Fralda geriatrica</label>
+                    <input type="number" id="quantidadeFraldageriatrica" name="quantidadeFraldageriatrica" placeholder="Quantidade">
+                </div>
+                
+                <div class="input-group">
+                    <input type="checkbox" id="talcoparabebe" name="talcoparabebe">
+                    <label for="talcoparabebe">Talco para bebê</label>
+                    <input type="number" id="quantidadeTalcoparabebe" name="quantidadeTalcoparabebe" placeholder="Quantidade">
+                </div>
+                
+                <div class="input-group">
+                    <input type="checkbox" id="lencoumido" name="lencoumido">
+                    <label for="lencoumido">Lenço úmido</label>
+                    <input type="number" id="quantidadeSabonete" name="quantidadeSabonete" placeholder="Quantidade">
+                </div>
+                <!-- Adicione os outros itens da categoria Materiais para Higiene aqui -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Produtos para limpeza</legend>
+                <div class="input-group">
+                    <input type="checkbox" id="sabaoliquido" name="sabaoliquido">
+                    <label for="sabaoliquido">Sabão Líquido</label>
+                    <input type="number" id="quantidadeSabaoliquido" name="quantidadeSabaoliquido" placeholder="Quantidade em litros">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="sabaoembarra" name="sabaoembarra">
+                    <label for="saboneteembarra">Sabão em barra</label>
+                    <input type="number" id="quantidadeSabaoembarra" name="quantidadeSabaoembarra" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="aguasanitaria" name="aguasanitaria">
+                    <label for="aguasanitaria">Água sanitaria</label>
+                    <input type="number" id="quantidadeAguasanitaria" name="quantidadeAguasanitaria" placeholder="Quantidade em litros">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="alvejante" name="alvejante">
+                    <label for="alvejante">Alvejante</label>
+                    <input type="number" id="quantidadeAlvejante" name="quantidadeAlvejante" placeholder="Quantidade em litros">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="vassoura" name="vassoura">
+                    <label for="vassoura">Vassoura</label>
+                    <input type="number" id="quantidadeVassoura" name="quantidadeVassoura" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="sacodelixo" name="sacodelixo">
+                    <label for="sacodelixo">Saco de lixo</label>
+                    <input type="number" id="quantidadeSacodelixo" name="quantidadeSacodelixo" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="panodechao" name="panodechao">
+                    <label for="panodechao">Pano de chão</label>
+                    <input type="number" id="quantidadePanodechao" name="quantidadePanodechao" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="panodeprato" name="panodeprato">
+                    <label for="panodeprato">Pano de prato</label>
+                    <input type="number" id="quantidadePanodeprato" name="quantidadePanodeprato" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="esponjaparalouca" name="esponjaparalouca">
+                    <label for="esponjaparalouca">Esponja para louça</label>
+                    <input type="number" id="quantidadeEsponjaparalouca" name="quantidadeEsponjaparalouca" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="balde" name="balde">
+                    <label for="balde">Balde</label>
+                    <input type="number" id="quantidadeSabaoembarra" name="quantidadeSabaoembarra" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="rodo" name="rodo">
+                    <label for="rodo">Rodo</label>
+                    <input type="number" id="quantidadeRodo" name="quantidadeRodo" placeholder="Quantidade">
+                </div>
+
+                <!-- Adicione os outros itens da categoria Materiais para Limpeza aqui -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Equipamentos para cozinha</legend>
+                <div class="input-group">
+                    <input type="checkbox" id="fogao" name="fogao">
+                    <label for="fogao">Fogão</label>
+                    <input type="number" id="quantidadeFogao" name="quantidadeFogao" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="panela" name="panela">
+                    <label for="panela">Panela</label>
+                    <input type="number" id="quantidadePanela" name="quantidadePanela" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="colherdemetal" name="colherdemetal">
+                    <label for="colherdemetal">Colher de metal</label>
+                    <input type="number" id="quantidadeColherdemetal" name="quantidadeColherdemetal" placeholder="Quantidade">
+                </div>
+                    <div class="input-group">
+                    <input type="checkbox" id="garfodemetal" name="garfodemetal">
+                    <label for="garfodemetal">Garfo de metal</label>
+                    <input type="number" id="quantidadeGarfodemetal" name="quantidadeGarfodemetal" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="facademetal" name="facademetal">
+                    <label for="facademetal">Faca de metal</label>
+                    <input type="number" id="quantidadeFacademetal" name="quantidadeFacademetal" placeholder="Quantidade">
+                </div>
+                    <div class="input-group">
+                    <input type="checkbox" id="escorredordemassa" name="escorredordemassa">
+                    <label for="escorredordemassa">Escorredor de massa</label>
+                    <input type="number" id="quantidadeEscorredordemassa" name="quantidadeEscorredordemassa" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="conchadefeijao" name="conchadefeijao">
+                    <label for="conchadefeijao">Concha de feijão</label>
+                    <input type="number" id="quantidadeConchadefeijao" name="quantidadeConchadefeijao" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="escumadeira" name="escumadeira">
+                    <label for="escumadeira">Escumadeira</label>
+                    <input type="number" id="quantidadeEscumadeira" name="quantidadeEscumadeira" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="pratoplastico" name="pratoplastico">
+                    <label for="pratoplastico">Prato plástico</label>
+                    <input type="number" id="quantidadePratoplastico" name="quantidadePratoplastico" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="facaplastica" name="facaplastica">
+                    <label for="facaplastica">Faca plástica</label>
+                    <input type="number" id="quantidadeFacaplastica" name="quantidadeFacaplastica" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="garfoplastico" name="garfoplastico">
+                    <label for="garfoplastico">Garfo plástico</label>
+                    <input type="number" id="quantidadeGarfoplastico" name="quantidadeGarfoplastico" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="colherplastica" name="colherplastica">
+                    <label for="colherplastica">Colher plástica</label>
+                    <input type="number" id="quantidadeColherplastica" name="quantidadeColherplastica" placeholder="Quantidade">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="embalagemmarmita" name="embalagemmarmita">
+                    <label for="embalagemmarmita">Embalagem para marmita</label>
+                    <input type="number" id="quantidadeEmbalagemparamarmita" name="quantidadeEmbalagemparamarmita" placeholder="Quantidade">
+                </div>
+                               
+                <!-- Adicione os outros itens da categoria Equipamentos para Cozinha aqui -->
+            </fieldset>
+            
+            <button type="submit">Cadastrar demandas</button>
+        </form>
+    </div>
+</body>
+</html>

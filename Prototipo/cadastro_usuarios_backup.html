@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuários</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Usuários</h1>
+        <form id="userForm">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div class="input-group">
+                    <label for="fullName">Nome Completo:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirmar E-mail" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar Senha" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="confirmPhone" name="confirmPhone" placeholder="Confirmar Telefone" required>
+                </div>
+                <div class="input-group">
+                    <label for="dob">Data de Nascimento:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="input-group">
+                    <label for="street">Endereço:</label>
+                    <input type="text" id="street" name="street" placeholder="Rua" required>
+                    <input type="text" id="number" name="number" placeholder="Número" required>
+                    <input type="text" id="complement" name="complement" placeholder="Complemento">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="neighborhood" name="neighborhood" placeholder="Bairro" required>
+                    <input type="text" id="city" name="city" placeholder="Cidade" required>
+                    <input type="text" id="state" name="state" placeholder="Estado" required>
+                    <input type="text" id="zipCode" name="zipCode" placeholder="CEP" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Recursos e Capacitações</legend>
+                <div class="input-group">
+                    <label><strong>Recursos disponíveis para coleta e entrega</strong></label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="carro" name="resources" value="carro">
+                        <label for="car">Carro</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="barco" name="resources" value="barco">
+                        <label for="boat">Barco</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="lancha" name="resources" value="lancha">
+                        <label for="boat">Lancha</label>
+                    </div>                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="jetski" name="resources" value="jetski">
+                        <label for="boat">Jet Ski</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="van" name="resources" value="van">
+                        <label for="boat">Van</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="caminhao" name="resources" value="caminhao">
+                        <label for="boat">Caminhão</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="caminhonete" name="resources" value="caminhonete">
+                        <label for="boat">Caminhote</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="moto" name="resources" value="moto">
+                        <label for="boat">Moto</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="onibus" name="resources" value="onibus">
+                        <label for="boat">Ônibus</label>
+                    </div>
+
+                    <!-- Adicione mais checkboxes conforme necessário -->
+                </div>
+                <div class="input-group">
+                    <label for="skills"><strong>Habilitações para meios de transporte</strong></label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="habilitacaocarro" name="habilitacao" value="habilitacaocarro">
+                        <label for="driver">Habilitação para carro</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="habilitacaomoto" name="habilitacao" value="habilitacaomoto">
+                        <label for="driver">Habilitação para moto</label>
+                    </div>                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="habilitacaocaminhao" name="habilitacao" value="habilitacaocaminhao">
+                        <label for="driver">Habilitação para caminhão</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="habilitacaoonibus" name="habilitacao" value="habilitacaoonibus">
+                        <label for="driver">Habilitação para ônibus</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="habilitacaojetski" name="habilitacao" value="habilitacaojetski">
+                        <label for="driver">Habilitação para jet ski</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="habilitacaolancha" name="habilitacao" value="habilitacaolancha">
+                        <label for="driver">Habilitação para lancha</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="habilitacaobarco" name="habilitacao" value="habilitacaobarco">
+                        <label for="driver">Habilitação para barco</label>
+                    </div>                    
+                    <!-- Adicione mais checkboxes conforme necessário -->
+                </div>
+             </fieldset>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
