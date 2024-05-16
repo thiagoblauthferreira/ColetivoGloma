@@ -5,6 +5,7 @@ Na natureza, existe uma relação ecológica entre indivíduos em que ambos se b
 O projeto tem início nas necessidades do voluntariado durante as catástrofes do Rio Grande do Sul, mas não se restringe apenas a esse momento trágico. Queremos desenvolver soluções que auxiliarão outras comunidades em situações semelhantes em todo o território brasileiro. Por isso, incentivamos a adesão ao coletivo de pessoas de todas as regiões.
 
 Descrição do projeto aqui https://github.com/thiagoblauthferreira/ColetivoGloma/issues/1#issuecomment-2113679378
+
 Meu WhatsApp para contato https://api.whatsapp.com/send/?phone=5551999871258
 
 Agradecimento especial a **Casa do Desenvolvedor** https://casadodesenvolvedor.com.br/ que divulgou a proposta para sua base de usuários, ajudando na captação de desenvolvedores voluntários.
